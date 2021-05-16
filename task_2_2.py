@@ -56,6 +56,9 @@ print(result_array)
 
 print(result_str)
 
+# print(list(result_str.split(sep = ' ')))
+
+
 
 
 
