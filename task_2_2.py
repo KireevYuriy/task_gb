@@ -14,7 +14,7 @@ for elem in input_list:
     # Проверка являемя ли элемент списка числом
     if elem[-1:].isdigit() == True:
         result_num += 1
-        
+
     # Переменная счетчик, для проврки цифр в элементах списка
     check = 0
     for symbol in elem:
