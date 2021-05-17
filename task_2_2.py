@@ -7,11 +7,19 @@ result_array = []
 # (Задание 3) Переменная для записи итогового результата в строку, без использования дополнительного списка
 result_str = ''
 
-for elem in input_list:
+# (Задание 4) Переменная для поиска числовых элементов по условию
+result_num = 0
 
+for elem in input_list:
+    # Проверка являемя ли элемент списка числом
+    if elem[-1:].isdigit() == True:
+        result_num += 1
+        
     # Переменная счетчик, для проврки цифр в элементах списка
     check = 0
     for symbol in elem:
+
+        # Перебор цифр от 0 до 9 и сравнение с символами в элементах списка
         for number_str in range(0,9,1):
             number_str = str(number_str)
             if number_str == symbol:
@@ -55,6 +63,8 @@ for elem in input_list:
 print(result_array)
 
 print(result_str)
+
+print('Количество числовых элементов в массиве: ',result_num)
 
 # print(list(result_str.split(sep = ' ')))
 
