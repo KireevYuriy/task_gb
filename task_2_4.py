@@ -24,7 +24,7 @@ for elem in sorted(list_price):
         string += f'{price[0]} руб {price[1]} коп.'
 
 print(string)
-print(list_price)
+print('Входний список цен: ',list_price)
 
 # Задание **. Новый список отсортированный по убыванию.
 string = ''
@@ -50,9 +50,17 @@ for elem in revers_list_price:
 
 
 print(string)
-print(revers_list_price)
-# Задание **. Вывод 5 цен самых дорогих товаров.
-print(revers_list_price[0:5])
+print('Входной, отсортированный по убыванию список: ',revers_list_price)
+# Задание ***. Вывод 5 цен самых дорогих товаров.
+check = 0
+for i in range(0,len(string),1):
+    if string[i] == 'п':
+        check += 1
+        if check <= 5:
+            lenght = i+1
+print('Список 5 самых дорогих цен: ',string[:lenght])
+
+
 
 
 
