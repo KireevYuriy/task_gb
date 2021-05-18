@@ -53,11 +53,11 @@ print(string)
 print('Входной, отсортированный по убыванию список: ',revers_list_price)
 # Задание ***. Вывод 5 цен самых дорогих товаров.
 check = 0
-for i in range(0,len(string),1):
-    if string[i] == 'п':
+for num in range(0,len(string),1):
+    if string[num] == 'п':
         check += 1
         if check <= 5:
-            lenght = i+1
+            lenght = num+1
 print('Список 5 самых дорогих цен: ',string[:lenght])
 
 
