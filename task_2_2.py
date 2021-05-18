@@ -18,7 +18,6 @@ for elem in input_list:
     # Переменная счетчик, для проврки цифр в элементах списка
     check = 0
     for symbol in elem:
-
         # Перебор цифр от 0 до 9 и сравнение с символами в элементах списка
         for number_str in range(0,9,1):
             number_str = str(number_str)
