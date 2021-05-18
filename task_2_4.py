@@ -58,7 +58,7 @@ for num in range(0,len(string),1):
         check += 1
         if check <= 5:
             lenght = num+1
-            
+
 print('Список 5 самых дорогих цен: ',string[:lenght])
 
 
